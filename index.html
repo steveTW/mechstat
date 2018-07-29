@@ -8,7 +8,9 @@
     <title>MechStat</title>
 	
 	<!-- Web Application Manifest -->
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="manifest.json">
+	<!-- include PWACompat _after_ your manifest -->
+	<script async src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v2.0.1/pwacompat.min.js"></script>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -52,7 +54,7 @@
 			</div>
 		</div>
 		<div class="mdl-layout__tab-panel" id="chart">
-			<script src='scripts/google-chart.js'></script>
+			<!--<script src='scripts/google-chart.js'></script>-->
 			<div id="bar_chart">
 			</div>
 		</div>

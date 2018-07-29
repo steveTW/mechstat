@@ -22,5 +22,10 @@ function handleQueryResponse(response) {
         allowHtml: true,
         legend: 'bottom'
     });
+	
+	
+	visualization = new google.visualization.BarChart(document.getElementById("bar_chart"));
+	
+	
 }
 google.setOnLoadCallback(drawVisualization);

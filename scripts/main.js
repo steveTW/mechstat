@@ -33,6 +33,7 @@
       )
     );
 
+	
   if ('serviceWorker' in navigator &&
       (window.location.protocol === 'https:' || isLocalhost)) {
     navigator.serviceWorker.register('service-worker.js')
@@ -67,6 +68,7 @@
           };
         }
       };
+	  console.log('Service worker registered');
     }).catch(function(e) {
       console.error('Error during service worker registration:', e);
     });
